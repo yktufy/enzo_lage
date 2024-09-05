@@ -1,0 +1,24 @@
+.span {
+    padding-left: 15%;
+    font-size: 380px;
+    font-family: sans-serif;
+    font-weight: 1000;
+    position: relative;
+    color: rgb(255, 0, 0);
+    -webkit-text-stroke: 2px black;
+}
+
+span::before {
+    position: absolute;
+    content: "enzo";
+    color: rgb(0, 179, 255);
+    animation: filling 2s linear infinite;
+    border-right: 3px solid transparent;
+    overflow: hidden;
+}
+
+@keyframes filling {
+    0% { width: 0%; }
+    50% { width: 100%; }
+    100% { width: 0%; }
+}
